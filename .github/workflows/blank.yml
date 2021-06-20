@@ -28,4 +28,4 @@ jobs:
       # Runs a single command using the runners shell
       - uses: HeshamMeneisi/gha-find-replace@master
         with:
-          mapping: ${{secrets}}
+          mapping: ${{toJson(secrets)}}
