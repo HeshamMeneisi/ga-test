@@ -31,3 +31,5 @@ jobs:
           mapping: ${{toJson(secrets)}}
           key_prefix: "{{"
           key_suffix: "}}"
+          
+      - run: cat test.txt
