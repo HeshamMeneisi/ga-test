@@ -29,3 +29,5 @@ jobs:
       - uses: HeshamMeneisi/gha-find-replace@master
         with:
           mapping: ${{toJson(secrets)}}
+          key_prefix: "{{"
+          key_suffix: "}}"
